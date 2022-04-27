@@ -1,0 +1,17 @@
+Ext.define('sample.view.main.Concat',{
+    extend:'Ext.container.Container',
+    xtype:'concat',
+    requires:[
+        'sample.view.main.Newregisteration',
+        'sample.view.main.Regassign'   
+    ],
+    layout:{
+        type:'hbox',
+        align:'stretch',
+        pack:'start'
+    },
+    items:[
+        {xtype:'array-grid',flex:1,border:true},
+        {xtype:'reg-page',flex:1}
+    ]
+})
